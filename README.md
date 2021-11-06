@@ -1,2 +1,2 @@
-# wolfmq-server
+# wolfmq
 (=
