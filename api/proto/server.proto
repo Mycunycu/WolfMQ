@@ -1,0 +1,17 @@
+// protoc --go_out=plugins=grpc:. server.proto
+syntax = "proto3";
+
+package api;
+option go_package = "/";
+
+service Server {
+  rpc DoSomething(Request) returns (Response) {}
+}
+
+message Request {
+  string message = 1;
+}
+
+message Response {
+  string message = 1;
+}
